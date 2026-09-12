@@ -1,0 +1,9 @@
+{
+  "id": "tbpedia-share",
+  "name": "TBPedia Share",
+  "version": "0.1.0",
+  "minAppVersion": "1.7.0",
+  "description": "Share the active note as formatted text and attachments through social apps.",
+  "author": "TBPedia",
+  "isDesktopOnly": false
+}

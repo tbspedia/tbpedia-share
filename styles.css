@@ -1,0 +1,128 @@
+.tbpedia-share-modal .modal-content {
+  max-width: 720px;
+}
+
+.tbpedia-share-intro,
+.tbpedia-share-summary,
+.tbpedia-share-warning,
+.tbpedia-share-attachments p,
+.tbpedia-share-desktop-help {
+  color: var(--text-muted);
+}
+
+.tbpedia-share-desktop-help {
+  margin: 12px 0 0;
+  font-size: var(--font-ui-small);
+}
+
+.tbpedia-platform-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tbpedia-platform-button {
+  display: flex;
+  min-height: 78px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  border-radius: var(--radius-m);
+  color: var(--text-normal);
+}
+
+.tbpedia-platform-button:hover {
+  background: var(--background-modifier-hover);
+  border-color: var(--interactive-accent);
+}
+
+.tbpedia-platform-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.tbpedia-share-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tbpedia-share-heading h2 {
+  margin: 0;
+}
+
+.tbpedia-share-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 16px 0 8px;
+  font-size: var(--font-ui-small);
+}
+
+.tbpedia-share-preview {
+  width: 100%;
+  min-height: 230px;
+  resize: vertical;
+  padding: 10px;
+  font-family: var(--font-text);
+  line-height: 1.5;
+}
+
+.tbpedia-share-warning {
+  border-left: 3px solid var(--text-warning);
+  background: var(--background-secondary);
+  padding: 9px 12px;
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+}
+
+.tbpedia-share-attachments {
+  margin: 16px 0;
+  padding: 12px;
+  background: var(--background-secondary);
+  border-radius: var(--radius-m);
+}
+
+.tbpedia-share-attachments p {
+  margin: 6px 0 10px;
+  font-size: var(--font-ui-small);
+}
+
+.tbpedia-share-image-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tbpedia-share-file {
+  font-size: var(--font-ui-smaller);
+}
+
+.tbpedia-share-actions,
+.tbpedia-share-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tbpedia-share-navigation {
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .tbpedia-platform-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tbpedia-platform-button {
+    min-height: 64px;
+  }
+
+  .tbpedia-share-preview {
+    min-height: 180px;
+  }
+}
